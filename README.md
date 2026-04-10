@@ -1,5 +1,7 @@
 # planning-skill
 
+> 🇰🇷 [한국어 README](./README.ko.md)
+
 **Universal 6-phase planning pipeline orchestrator — domain-agnostic structured planning from context to executable roadmap.**
 
 ## Prerequisites
