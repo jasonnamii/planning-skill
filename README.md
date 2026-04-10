@@ -2,6 +2,11 @@
 
 **Universal 6-phase planning pipeline orchestrator — domain-agnostic structured planning from context to executable roadmap.**
 
+## Prerequisites
+
+- **Obsidian Vault** — default output format is Obsidian-compatible `.md`; without a vault, outputs still work as standard markdown
+- **Claude Cowork or Claude Code** environment
+
 ## Goal
 
 Strategic planning demands methodical progression from raw context through hypothesis, research, convergence, creative insight, and final execution planning. Planning-Skill orchestrates this 6-phase pipeline across any domain — startups, campaigns, products, teams, transformations — using research-frame and trigger-dictionary as phase-specific tools, ensuring rigor without domain lock-in.
