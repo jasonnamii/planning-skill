@@ -97,7 +97,7 @@ P0 상황배경 → P1 가설적 목표 → P2 가설확장+리서치 → P3 논
 | 신호 | 위임 대상 | 이유 |
 |------|-----------|------|
 | 지자체·선거·정책·공약 | policy-planning | 행정단위 프로파일링, ABCD축, 제출청소 등 도메인 특화 프로토콜 보유 |
-| 청사진→로드맵→액션 전환 | ceo-pipeline | 샤워효과 캐스케이드 특화 |
+| 청사진→로드맵→액션 전환 | ceo-pipeline | 샤워효과 캐스케이드 특화. **로드맵·액션리스트 단독 요청 = ceo-pipeline 직행. "기획 후 로드맵까지" = planning-skill P0~P3 → P3 완료 시 ceo-pipeline 핸드오프** |
 | 사업계획서·IR·피치덱 | bp-guide | VC 프레임 특화 |
 | UI·화면설계·PRD | ui-action-designer | 피그마→PRD→Action 특화 |
 | 리서치만 단독 수행 | research-frame | WHY→HOW→SCOPE 단독 실행 |
