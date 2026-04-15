@@ -75,10 +75,8 @@ P2 리서치 결과가 불충분하면:
 | 항목 | 기본값 | 형 지정 시 |
 |------|--------|-----------|
 | 파일 형식 | Obsidian .md | 형이 명시한 포맷 우선 (.docx, .html 등) |
-| 구조·스타일 | deliverable-engine 모래시계+블록설계 | 형 지정 스타일 체계 (HTML div, apple-design 등) |
-| 줄 수·부록 | deliverable-engine 기본 | 형 지정값 (예: 40줄, 부록접기) |
-
-형이 지정하지 않은 항목만 deliverable-engine 기본값 적용.
+| 구조·스타일 | 모래시계+블록설계 | 형 지정 스타일 체계 (HTML div, apple-design 등) |
+| 줄 수·부록 | 기본값 | 형 지정값 (예: 40줄, 부록접기) |
 
 ---
 
