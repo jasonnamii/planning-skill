@@ -14,6 +14,7 @@ description: |
   - references/phase3-convergence.md
   - references/phase4-jump.md
   - references/phase5-evolution.md
+vault_dependency: SOFT
 ---
 
 # Planning Skill
