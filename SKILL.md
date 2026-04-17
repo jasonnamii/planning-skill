@@ -15,6 +15,7 @@ description: |
   - references/phase4-jump.md
   - references/phase5-evolution.md
 vault_dependency: SOFT
+version: 1.0.0
 ---
 
 # Planning Skill
@@ -25,7 +26,22 @@ vault_dependency: SOFT
 
 ---
 
+## ⛔ 절대 규칙 (5개)
+
+| # | 규칙 | 이유 |
+|---|------|------|
+| 1 | **포맷은 형이 지정** — 스킬이 .docx·.html·HTML div 등 임의 결정 금지 | 포맷 오결정은 전체 산출물 재작업으로 연결 |
+| 2 | **P1→P2 Hard Gate** — 갭 매트릭스 없이 P2 진입 금지, P2 없이 기획안 작성 금지 | 리서치 없는 기획 = 근거 공백 |
+| 3 | **스파인 확정 후 P4** — P3 수렴 미완료 시 점프기술 적용 금지 | 발산만 되고 수렴 실패 |
+| 4 | **도메인 라우팅 우선** — NOT 신호 감지 시 대체 스킬로 위임 (policy-planning·ceo-pipeline·bp-guide·ui-action-designer·research-frame·financial-model) | 도메인 특화 프로토콜 누락 방지 |
+| 5 | **허브는 위임** — "어떻게"는 전부 trigger-dictionary·스킬 호출. 허브가 직접 실행 금지 | 오케스트레이터 역할 유지, 토큰 폭식 방지 |
+
+---
+
 ## 파이프라인 총괄
+
+> **로딩 규칙:** `references/phase{N}.md`는 해당 Phase 진입 시에만 로드한다. 전체 동시 로드 금지 — 허브는 10KB 유지.
+
 
 ```
 P0 상황배경 → P1 가설적 목표 → P2 가설확장+리서치 → P3 논리적 수렴 → P4 창의적 점프 → P5 기획안 진화
