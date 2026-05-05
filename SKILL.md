@@ -1,6 +1,13 @@
 ---
 name: planning-skill
-description: "범용 기획 파이프라인. 상황배경→가설→리서치→수렴→창의적 점프의 6Phase 오케스트레이터. 도메인 무관. 기존 스킬(research-frame, trigger-dictionary, hit-skill)을 단계별 호출하는 허브. P1: 플래닝, 플래닝스킬, 기획설계, 기획프로세스, 범용기획, planning skill. P2: 기획해줘, 기획 시작, 설계해줘, plan this, start planning. P3: planning framework, planning pipeline, hypothesis-driven planning. P5: 기획안으로, 전략서로, 제안서로. NOT: 정책기획(→policy-planning), 로드맵·액션리스트(→ceo-pipeline), 리서치만(→research-frame), BP·사업계획서(→bp-guide), UI설계(→ui-designer), 재무모델(→financial-model)."
+description: |
+  범용 기획 파이프라인. 상황배경→가설→리서치→수렴→창의적 점프의 6Phase 오케스트레이터. 도메인 무관.
+    P1: 플래닝, 플래닝스킬, 기획설계, 기획프로세스, 범용기획, planning skill, 기획방법론, 기획파이프라인, 기획오케스트레이터, 기획시작, 기획도와줘, 기획해줘, 기획방향, 기획틀, 기획구조, 기획순서, 기획단계, 기획흐름, 신규기획, 프로젝트기획, 서비스기획, 사업기획, 마케팅기획.
+    P2: 기획해줘, 기획 시작, 설계해줘, plan this, start planning, 기획 방향 잡아줘, 어떻게 기획해, 기획 도와줘, 기획 방법 알려줘, 뭐부터 시작해.
+    P3: planning framework, planning pipeline, hypothesis-driven planning, generalist planning, 6-phase orchestrator.
+    P4: 도메인 무관 기획 시작시, 기획 방향이 안 잡힐 때, 리서치→기획안 연결이 필요할 때.
+    P5: 기획안으로, 전략서로, 제안서로, .md로.
+    NOT: 정책기획(→policy-planning), 로드맵·액션리스트(→ceo-pipeline), 리서치만(→research-skill), BP·사업계획서(→bp-guide), UI설계(→ui-designer), 재무모델(→financial-model).
 version: 1.0.0
 vault_dependency: SOFT
 uses:
