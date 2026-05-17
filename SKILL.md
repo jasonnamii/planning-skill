@@ -23,9 +23,31 @@ uses:
 
 범용 기획 파이프라인. 형의 기획 사고 흐름을 6 Phase로 프로토콜화한 오케스트레이터.
 
+
+## Skill Boundaries
+
+- **하는 것** — 범용 기획 파이프라인.
+- **안 하는 것** — 정책기획(→policy-planning), 로드맵·액션리스트(→ceo-pipeline), 리서치만(→research-skill), BP·사업계획서(→bp-guide), UI설계(→ui-designer), 재무모델(→financial-model).
+
 이 스킬의 핵심 역할: **기획의 "언제·무엇을" 판단**하고, **"어떻게"는 전문 스킬/트리거에 위임**한다.
 
 ---
+
+## When to Use
+
+- 사용자가 "기획해줘", "기획 시작", "설계해줘", "plan this", "start planning" 같은 표현으로 발동
+- 도메인 무관 기획 시작시, 기획 방향이 안 잡힐 때, 리서치→기획안 연결이 필요할 때.
+- **안 쓸 때** — 정책기획(→policy-planning), 로드맵·액션리스트(→ceo-pipeline), 리서치만(→research-skill), BP·사업계획서(→bp-guide), UI설계(→ui-designer), 재무모델(→financial-model).
+
+
+## Prerequisites
+
+| # | 체크 | 미충족 시 |
+|---|------|-----------|
+| 1 | 대상·입력 명확 (스킬 발동 의도 확인) | 1줄 확인 후 진입 |
+| 2 | references/ 폴더 접근 가능 | inline fallback |
+| 3 | scripts/ 실행 권한 | 권한 보정 후 재시도 |
+
 
 ## ⛔ 절대 규칙 (5개)
 
@@ -156,7 +178,38 @@ P3 수렴 완료 후, 형이 직접 지정하지 않으면 상황에 따라 추�
 산출물·대화 작업 라벨 ZERO. → `shaper-skill/references/no-work-label.md`
 
 
-## Gotchas
+## Output Path
+
+| 산출물 | 경로 |
+|---|---|
+| 주 산출물 | `mnt/outputs/planning-skill_{topic}_{YYYY-MM-DD}.md` |
+| 형식 | 기획안으로, 전략서로, 제안서로, .md로. |
+| 리서치 결과 (해당 시) | `{VAULT}/_skills research/planning-skill/{YYYY-MM-DD}_{topic}.md` |
+
+## Reference Index
+
+| 파일 | 내용 | 언제 |
+|---|---|---|
+| `references/phase0-setup.md` | phase0 setup | 해당 단계 진입 시 |
+| `references/phase1-hypothesis.md` | phase1 hypothesis | 해당 단계 진입 시 |
+| `references/phase2-research.md` | phase2 research | 해당 단계 진입 시 |
+| `references/phase3-convergence.md` | phase3 convergence | 해당 단계 진입 시 |
+| `references/phase4-jump.md` | phase4 jump | 해당 단계 진입 시 |
+| `references/phase5-evolution.md` | phase5 evolution | 해당 단계 진입 시 |
+| `references/post-doctor-notes.md` | post doctor notes | 해당 단계 진입 시 |
+
+
+## Next Phase
+
+본 스킬 작업 후 자연스럽게 이어지는 흐름:
+
+- 후속 작업 → `policy-planning`
+- 후속 작업 → `ceo-pipeline`
+- 후속 작업 → `research-skill`
+- 후속 작업 → `bp-guide`
+- 후속 작업 → `ui-designer`
+
+## Failure Modes (Gotchas)
 
 - **리서치 없이 기획 착수:** P1 갭 매트릭스만으로 바로 기획안 작성 시도. 반드시 P2를 거쳐야 "왜 이 방향인가"의 근거가 생긴다.
 - **스파인 미확정 상태로 P4 진입:** 점프기술은 수렴된 결론 위에 적용해야 효과. 스파인 없이 점프하면 발산만 됨.
@@ -166,3 +219,11 @@ P3 수렴 완료 후, 형이 직접 지정하지 않으면 상황에 따라 추�
 - **P0 과잉 세팅:** 프로젝트 CLAUDE.md가 이미 있으면 P0 대부분 스킵 가능. 매번 처음부터 좌표계를 세우지 않는다.
 - **QC 결과를 산출물에 포함:** P5의 기획언어 금지패턴 체크, 수치 정합성 검증 등은 내부 검증 절차다. 산출물에 "금지패턴 준수 확인" 테이블이나 "사용 안 함" 목록을 넣으면 금지 표현이 산출물에 노출된다. QC는 작성 과정에서 수행하고, 그 결과(체크리스트·검증 로그)는 산출물에서 제거한다.
 - **라우팅 위임 시 대상 스킬 내부 구조 인용:** 위임을 제안할 때 대상 스킬의 Phase 번호, 단계명, 내부 프로토콜명 등을 산출물에 인용하지 않는다. "정책기획 전문 파이프라인이 더 적합할 수 있다" 수준으로 안내하고, 형이 상세를 원하면 해당 스킬 호출로 대응한다.
+
+
+## ❌ WRONG vs ✅ CORRECT
+
+```
+❌ WRONG: 트리거 단어만 보고 발동 — 본질·범위 확인 ✗ → 오발동·범위 이탈
+✅ CORRECT: Skill Boundaries·When to Use 확인 후 발동 → 본질 작업만 수행
+```
