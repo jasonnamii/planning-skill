@@ -2,11 +2,11 @@
 name: planning-skill
 description: |
   범용 기획 파이프라인. 상황배경→가설→리서치→수렴→창의적 점프의 6Phase 오케스트레이터. 도메인 무관.
-    P1: 플래닝, 플래닝스킬, 기획설계, 기획프로세스, 범용기획, planning skill, 기획방법론, 기획파이프라인, 기획오케스트레이터, 기획시작, 기획도와줘, 기획해줘, 기획방향, 기획틀, 기획구조, 기획순서, 기획단계, 기획흐름, 신규기획, 프로젝트기획, 서비스기획, 사업기획, 마케팅기획.
+    P1: 플래닝, 플래닝스킬, 기획설계, 기획프로세스, 범용기획, planning skill, 기획방법론, 기획파이프라인, 기획오케스트레이터, 기획시작, 기획도와줘, 기획해줘, 기획방향, 기획틀, 기획구조, 기획순서, 기획단계, 기획흐름, 신규기획, 프로젝트기획, 서비스기획, 사업기획.
     P2: 기획해줘, 기획 시작, 설계해줘, plan this, start planning, 기획 방향 잡아줘, 어떻게 기획해, 기획 도와줘, 기획 방법 알려줘, 뭐부터 시작해.
     P3: planning framework, planning pipeline, hypothesis-driven planning, generalist planning, 6-phase orchestrator.
     P4: 도메인 무관 기획 시작시, 기획 방향이 안 잡힐 때, 리서치→기획안 연결이 필요할 때.
-    P5: 기획안으로, 전략서로, 제안서로, .md로.
+    P5: 기획안으로, 전략서로, 제안서로.md로.
     NOT: 정책기획(→policy-planning), 로드맵·액션리스트(→ceo-pipeline), 리서치만(→research-skill), BP·사업계획서(→bp-guide), UI설계(→ui-designer), 재무모델(→financial-model).
 version: 1.0.0
 vault_dependency: SOFT
@@ -92,7 +92,7 @@ Phase이름핵심 행위호출 도구상세P0상황배경좌표계 설정 (의�
 
 기획안 최종 포맷은 **형이 직접 지정**한다. 스킬이 임의로 정하지 않는다.
 
-항목기본값형 지정 시파일 형식Obsidian .md형이 명시한 포맷 우선 (.docx, .html 등)구조·스타일모래시계+블록설계형 지정 스타일 체계 (HTML div, apple-design 등)줄 수·부록기본값형 지정값 (예: 40줄, 부록접기)
+항목기본값형 지정 시파일 형식Obsidian .md형이 명시한 포맷 우선 (.docx.html 등)구조·스타일모래시계+블록설계형 지정 스타일 체계 (HTML div, apple-design 등)줄 수·부록기본값형 지정값 (예: 40줄, 부록접기)
 
 ---
 
@@ -183,7 +183,7 @@ P3 수렴 완료 후, 형이 직접 지정하지 않으면 상황에 따라 추�
 | 산출물 | 경로 |
 |---|---|
 | 주 산출물 | `mnt/outputs/planning-skill_{topic}_{YYYY-MM-DD}.md` |
-| 형식 | 기획안으로, 전략서로, 제안서로, .md로. |
+| 형식 | 기획안으로, 전략서로, 제안서로.md로. |
 | 리서치 결과 (해당 시) | `{VAULT}/_skills research/planning-skill/{YYYY-MM-DD}_{topic}.md` |
 
 ## Reference Index
