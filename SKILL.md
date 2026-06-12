@@ -1,5 +1,6 @@
 ---
 name: planning-skill
+version: 1.0
 description: |
   범용 기획 파이프라인. 상황배경→가설→리서치→수렴→창의적 점프의 6Phase 오케스트레이터. 도메인 무관. 트리거: 플래닝, 플래닝스킬, 기획설계, 기획프로세스, 범용기획, planning skill, 기획방법론, 기획파이프라인, 기획오케스트레이터, 기획시작, 기획도와줘, 기획해줘, 기획방향, 기획틀, 기획구조, 기획순서, 기획단계, 기획흐름, 신규기획, 프로젝트기획, 서비스기획, 사업기획. NOT: 정책기획(→policy-planning), 로드맵·액션리스트(→ceo-pipeline), 리서치만(→research-skill), BP·사업계획서(→bp-guide), UI설계(→ui-designer), 재무모델(→financial-model).
 ---
